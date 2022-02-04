@@ -13,6 +13,10 @@ public class Student {
         this.rollNumber = rollNumber;
     }
 
+    public void study() {
+        System.out.println("I am studying...");
+    }
+
     public String getFirstName() {
         return firstName;
     }
