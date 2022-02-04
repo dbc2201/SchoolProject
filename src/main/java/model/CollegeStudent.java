@@ -55,9 +55,6 @@ public class CollegeStudent extends Student {
 
     @Override
     public String toString() {
-        return "CollegeStudent{" +
-                "isPlaced=" + isPlaced +
-                ", collegeEmailAddress='" + collegeEmailAddress + '\'' +
-                '}';
+        return "CollegeStudent{" + "isPlaced=" + isPlaced + ", collegeEmailAddress='" + collegeEmailAddress + '\'' + '}';
     }
 }
