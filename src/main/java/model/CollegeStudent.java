@@ -7,5 +7,19 @@ public class CollegeStudent extends Student {
 
     public CollegeStudent(String firstName, String lastName, long rollNumber) {
         super(firstName, lastName, rollNumber);
+        this.collegeEmailAddress = createCollegeEmailAddress();
+        this.isPlaced = false;
     }
+
+    public CollegeStudent(String firstName, String lastName, long rollNumber, String collegeEmailAddress, boolean isPlaced) {
+        super(firstName, lastName, rollNumber);
+        this.collegeEmailAddress = collegeEmailAddress;
+        this.isPlaced = isPlaced;
+    }
+
+    private String createCollegeEmailAddress() {
+        return getFirstName() + "." + getLastName() + "@gla.ac.in";
+    }
+
+
 }
