@@ -2,6 +2,9 @@ package model;
 
 import java.util.Objects;
 
+// college student, school student, projects, assignments, attendance, placement
+// intelligent, average, low
+
 public class Student {
     private String firstName;
     private String lastName;
