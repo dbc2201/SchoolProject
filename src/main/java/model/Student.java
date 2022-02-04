@@ -17,6 +17,10 @@ public class Student {
         System.out.println("I am studying...");
     }
 
+    public void study(String subjectName) {
+        System.out.println("I am studying " + subjectName + ".");
+    }
+
     public String getFirstName() {
         return firstName;
     }
