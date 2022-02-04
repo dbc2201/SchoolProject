@@ -1,5 +1,6 @@
 package model;
 
+import javax.swing.*;
 import java.util.Objects;
 
 public class CollegeStudent extends Student {
@@ -17,6 +18,14 @@ public class CollegeStudent extends Student {
         super(firstName, lastName, rollNumber);
         this.collegeEmailAddress = collegeEmailAddress;
         this.isPlaced = isPlaced;
+    }
+
+    public void study() {
+        JOptionPane.showMessageDialog(null, "I am a college student.");
+    }
+
+    public void study(String subjectName) {
+        JOptionPane.showMessageDialog(null, "I am a college student, studying " + subjectName + ".");
     }
 
     private String createCollegeEmailAddress() {

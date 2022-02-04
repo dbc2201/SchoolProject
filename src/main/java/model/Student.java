@@ -1,5 +1,6 @@
 package model;
 
+import javax.swing.*;
 import java.util.Objects;
 
 // college student, school student, projects, assignments, attendance, placement
@@ -17,11 +18,11 @@ public class Student {
     }
 
     public void study() {
-        System.out.println("I am studying...");
+        JOptionPane.showMessageDialog(null, "I am studying...");
     }
 
     public void study(String subjectName) {
-        System.out.println("I am studying " + subjectName + ".");
+        JOptionPane.showMessageDialog(null, "I am studying " + subjectName + ".");
     }
 
     public String getFirstName() {
